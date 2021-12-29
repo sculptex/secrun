@@ -20,3 +20,7 @@ Run bash command as frequently as every second (a bit like cron)
 ## Notes
   The timing of command is roughly a second apart but might be fractionally more. If hi-res timing is required, do not rely on freq
   
+## To Do/ideas
+  * More flexible command execution, multiple parameters etc.
+  * Improve Timer resolution to synchronise with seconds
+  * Create Blocking mode option (previous command must finish before executing again). For now can just be implemented with tmp file creation at start of bash script and its removal at end of script, with bash script termination if tmp file present.
